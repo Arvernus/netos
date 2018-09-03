@@ -2,7 +2,7 @@
   "name": "netos",
   "version": "1.0.0",
   "description": "SCSS Library Arvernus",
-  "main": "style.scss",
+  "main": "netos.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
