@@ -1,30 +1,30 @@
-$grassy-green: #39ab00;
-$dark-grey: #444444;
-$black: #000000;
-$white: #ffffff;
-$eggshell: #f8f8f8;
+$grassy-green: #39ab00 !default;
+$dark-grey: #444444 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$eggshell: #f8f8f8 !default;
 
-$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$font-color: #565154;
+$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !default;
+$font-color: #565154 !default;
 
-$primary-color: $grassy-green;
+$primary-color: $grassy-green !default;
 
-$icon-height: 20px;
+$icon-height: 20px !default;
 
-$header-height: 80px;
-$header-height-mobile: ($header-height * 0.75);
-$header-logo-height: ($header-height * 0.5);
-$header-logo-height-mobile: ($header-height-mobile * 0.5);
-$header-color: $white;
-$header-nav-color: darken($header-color, 10);
+$header-height: 80px !default;
+$header-height-mobile: ($header-height * 0.75) !default;
+$header-logo-height: ($header-height * 0.5) !default;
+$header-logo-height-mobile: ($header-height-mobile * 0.5) !default;
+$header-color: $white !default;
+$header-nav-color: darken($header-color, 10) !default;
 
-$social-footer-background: lighten($black, 90);
-$legal-footer-background: darken($social-footer-background, 5);
+$social-footer-background: lighten($black, 90) !default;
+$legal-footer-background: darken($social-footer-background, 5) !default;
 
-$button-color: $primary-color;
-$button-color-hover: darken($button-color, 5);
+$button-color: $primary-color !default;
+$button-color-hover: darken($button-color, 5); !default
 
-$link-color: $primary-color;
-$link-color-hover: darken($link-color, 10);
+$link-color: $primary-color !default;
+$link-color-hover: darken($link-color, 10) !default;
 
-$card-border-radius: 6px;
+$card-border-radius: 6px !default;
