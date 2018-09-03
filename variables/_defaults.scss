@@ -1,0 +1,30 @@
+$grassy-green: #39ab00;
+$dark-grey: #444444;
+$black: #000000;
+$white: #ffffff;
+$eggshell: #f8f8f8;
+
+$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$font-color: #56515;
+
+$primary-color: $grassy-green;
+
+$icon-height: 20px;
+
+$header-height: 80px;
+$header-height-mobile: ($header-height * 0.75);
+$header-logo-height: ($header-height * 0.5);
+$header-logo-height-mobile: ($header-height-mobile * 0.5);
+$header-color: $white;
+$header-nav-color: darken($header-color, 10);
+
+$social-footer-background: lighten($black, 90);
+$legal-footer-background: darken($social-footer-background, 5);
+
+$button-color: $primary-color;
+$button-color-hover: darken($button-color, 5);
+
+$link-color: $primary-color;
+$link-color-hover: darken($link-color, 10);
+
+$card-border-radius: 6px;
