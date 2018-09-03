@@ -13,6 +13,6 @@ als nächstes gilt es sicher zustellen, dass der SASS/SCSS PreProcessor den Pfad
 }))
 ```
 nun muss die Library nur noch in das Projekt eingebunden werden:
-``scss
+```scss
 @import 'netos'; // Arvernus SCSS Library
 ```
