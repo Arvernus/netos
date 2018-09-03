@@ -1,0 +1,365 @@
+@mixin standard-grid {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	@media (min-width: $medium) {
+		width: 60%;
+	}
+	margin: 0 auto;
+	@supports (display: grid) {
+		width: unset;
+		margin: initial;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+}
+
+@mixin full-width {
+	grid-column: 1 / 13;
+}
+
+@mixin extended-width {
+	grid-column: 2 / 12;
+	@media (min-width: $xsmall) {
+		grid-column: 2 / 12;
+	}
+	@media (min-width: $small) {
+		grid-column: 2 / 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: 2 / 12;
+	}
+	@media (min-width: $large) {
+		grid-column: 3 / 11;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: 3 / 11;
+	}
+}
+
+@mixin standard-width {
+	grid-column: 2 / 12;
+	@media (min-width: $xsmall) {
+		grid-column: 2 / 12;
+	}
+	@media (min-width: $small) {
+		grid-column: 2 / 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: 3 / 11;
+	}
+	@media (min-width: $large) {
+		grid-column: 4 / 10;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: 4 / 10;
+	}
+}
+
+@mixin slim-width {
+	grid-column: 2 / 12;
+	@media (min-width: $xsmall) {
+		grid-column: 2 / 12;
+	}
+	@media (min-width: $small) {
+		grid-column: 2 / 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: 4 / 10;
+	}
+	@media (min-width: $large) {
+		grid-column: 5 / 9;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: 5 / 9;
+	}
+}
+
+@mixin grid-column-1 {
+	grid-column: span 1;
+	grid-row: span 1;
+	@media (min-width: $xsmall) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $small) {
+		grid-column: span 4;
+		grid-row: span 4;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 3;
+		grid-row: span 3;
+	}
+	@media (min-width: $large) {
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+}
+@mixin grid-column-2 {
+	grid-column: span 2;
+	grid-row: span 2;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $large) {
+		grid-column: span 4;
+		grid-row: span 4;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+@mixin grid-column-3 {
+	grid-column: span 3;
+	grid-row: span 3;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $large) {
+		grid-column: span 4;
+		grid-row: span 4;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 3;
+		grid-row: span 3;
+	}
+}
+@mixin grid-column-4 {
+	grid-column: span 4;
+	grid-row: span 4;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $large) {
+		grid-column: span 4;
+		grid-row: span 4;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 4;
+		grid-row: span 4;
+	}
+}
+@mixin grid-column-5 {
+	grid-column: span 5;
+	grid-row: span 5;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 4;
+		grid-row: span 5;
+	}
+	@media (min-width: $large) {
+		grid-column: span 5;
+		grid-row: span 5;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 5;
+		grid-row: span 5;
+	}
+}
+@mixin grid-column-6 {
+	grid-column: span 6;
+	grid-row: span 6;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $large) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+}
+@mixin grid-column-7 {
+	grid-column: span 7;
+	grid-row: span 7;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $large) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 7;
+		grid-row: span 7;
+	}
+}
+@mixin grid-column-8 {
+	grid-column: span 8;
+	grid-row: span 8;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 6;
+		grid-row: span 6;
+	}
+	@media (min-width: $large) {
+		grid-column: span 8;
+		grid-row: span 8;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 8;
+		grid-row: span 8;
+	}
+}
+@mixin grid-column-9 {
+	grid-column: span 9;
+	grid-row: span 9;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 9;
+		grid-row: span 9;
+	}
+	@media (min-width: $large) {
+		grid-column: span 9;
+		grid-row: span 9;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 9;
+		grid-row: span 9;
+	}
+}
+@mixin grid-column-10 {
+	grid-column: span 10;
+	grid-row: span 10;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $large) {
+		grid-column: span 10;
+		grid-row: span 10;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 10;
+		grid-row: span 10;
+	}
+}
+@mixin grid-column-11 {
+	grid-column: span 11;
+	grid-row: span 11;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $large) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 11;
+		grid-row: span 11;
+	}
+}
+@mixin grid-column-12 {
+	grid-column: span 12;
+	grid-row: span 12;
+	@media (min-width: $xsmall) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $small) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $medium) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $large) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+	@media (min-width: $xlarge) {
+		grid-column: span 12;
+		grid-row: span 12;
+	}
+}
