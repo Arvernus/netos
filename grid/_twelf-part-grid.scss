@@ -75,291 +75,64 @@
 	}
 }
 
-@mixin grid-column-1 {
-	grid-column: span 1;
-	grid-row: span 1;
+@mixin grid-item($standardSpan, $xsmallSpan, $smallSpan, $mediumSpan, $largeSpan, $xlargeSpan) {
+	grid-column: span #{$standardSpan};
+	grid-row: span #{$standardSpan};
 	@media (min-width: $xsmall) {
-		grid-column: span 6;
-		grid-row: span 6;
+		grid-column: span #{$xsmallSpan};
+		grid-row: span #{$xsmallSpan};
 	}
 	@media (min-width: $small) {
-		grid-column: span 4;
-		grid-row: span 4;
+		grid-column: span #{$smallSpan};
+		grid-row: span #{$smallSpan};
 	}
 	@media (min-width: $medium) {
-		grid-column: span 3;
-		grid-row: span 3;
+		grid-column: span #{$mediumSpan};
+		grid-row: span #{$mediumSpan};
 	}
 	@media (min-width: $large) {
-		grid-column: span 2;
-		grid-row: span 1;
+		grid-column: span #{$largeSpan};
+		grid-row: span #{$largeSpan};
 	}
 	@media (min-width: $xlarge) {
-		grid-column: span 1;
-		grid-row: span 1;
+		grid-column: span #{$xlargeSpan};
+		grid-row: span #{$xlargeSpan};
 	}
+}
+
+@mixin grid-column-1 {
+	@include grid-item(12,6,4,3,2,1);
 }
 @mixin grid-column-2 {
-	grid-column: span 2;
-	grid-row: span 2;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $large) {
-		grid-column: span 4;
-		grid-row: span 4;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
+	@include grid-item(12,12,6,6,4,2);
 }
 @mixin grid-column-3 {
-	grid-column: span 3;
-	grid-row: span 3;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $large) {
-		grid-column: span 4;
-		grid-row: span 4;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 3;
-		grid-row: span 3;
-	}
+	@include grid-item(12,12,6,6,4,3);
 }
 @mixin grid-column-4 {
-	grid-column: span 4;
-	grid-row: span 4;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $large) {
-		grid-column: span 4;
-		grid-row: span 4;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 4;
-		grid-row: span 4;
-	}
+	@include grid-item(12,12,6,6,4,4);
 }
 @mixin grid-column-5 {
-	grid-column: span 5;
-	grid-row: span 5;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 4;
-		grid-row: span 5;
-	}
-	@media (min-width: $large) {
-		grid-column: span 5;
-		grid-row: span 5;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 5;
-		grid-row: span 5;
-	}
+	@include grid-item(12,12,6,5,5,5);
 }
 @mixin grid-column-6 {
-	grid-column: span 6;
-	grid-row: span 6;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $large) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
+	@include grid-item(12,12,6,6,6,6);
 }
 @mixin grid-column-7 {
-	grid-column: span 7;
-	grid-row: span 7;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $large) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 7;
-		grid-row: span 7;
-	}
+	@include grid-item(12,12,12,6,6,7);
 }
 @mixin grid-column-8 {
-	grid-column: span 8;
-	grid-row: span 8;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 6;
-		grid-row: span 6;
-	}
-	@media (min-width: $large) {
-		grid-column: span 8;
-		grid-row: span 8;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 8;
-		grid-row: span 8;
-	}
+	@include grid-item(12,12,12,6,8,8);
 }
 @mixin grid-column-9 {
-	grid-column: span 9;
-	grid-row: span 9;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 9;
-		grid-row: span 9;
-	}
-	@media (min-width: $large) {
-		grid-column: span 9;
-		grid-row: span 9;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 9;
-		grid-row: span 9;
-	}
+	@include grid-item(12,12,12,9,9,9);
 }
 @mixin grid-column-10 {
-	grid-column: span 10;
-	grid-row: span 10;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $large) {
-		grid-column: span 10;
-		grid-row: span 10;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 10;
-		grid-row: span 10;
-	}
+	@include grid-item(12,12,12,12,10,10);
 }
 @mixin grid-column-11 {
-	grid-column: span 11;
-	grid-row: span 11;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $large) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 11;
-		grid-row: span 11;
-	}
+	@include grid-item(12,12,12,12,12,11);
 }
 @mixin grid-column-12 {
-	grid-column: span 12;
-	grid-row: span 12;
-	@media (min-width: $xsmall) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $small) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $large) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span 12;
-		grid-row: span 12;
-	}
+	@include grid-item(12,12,12,12,12,12);
 }
