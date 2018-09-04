@@ -1,35 +1,3 @@
-$grassy-green: #39ab00 !default;
-$dark-grey: #444444 !default;
-$black: #000000 !default;
-$white: #ffffff !default;
-$eggshell: #f8f8f8 !default;
-
-$primary-color: $grassy-green !default;
-
-$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !default;
-$font-family-heading: $font-family !default;
-$font-family-heading-2: $font-family-heading !default;
-$font-family-heading-3: $font-family-heading !default;
-$font-family-heading-4: $font-family-heading !default;
-$font-family-heading-5: $font-family-heading !default;
-$font-family-heading-6: $font-family-heading !default;
-
-$font-color: #565154 !default;
-$font-color-heading: $font-color !default;
-$font-color-heading-2: $font-color !default;
-$font-color-heading-3: $font-color !default;
-$font-color-heading-4: $font-color !default;
-$font-color-heading-5: $font-color !default;
-$font-color-heading-6: $font-color !default;
-
-$font-size: 18px !default;
-$font-size-heading: 2em !default;
-$font-size-heading-2: 1.75em !default;
-$font-size-heading-3: 1.5em !default;
-$font-size-heading-4: 1.5em !default;
-$font-size-heading-5: 1.25em !default;
-$font-size-heading-6: 1.25em !default;
-
 $icon-height: 20px !default;
 
 $header-height: 80px !default;
@@ -41,11 +9,5 @@ $header-nav-color: darken($header-color, 10) !default;
 
 $social-footer-background: lighten($black, 90) !default;
 $legal-footer-background: darken($social-footer-background, 5) !default;
-
-$button-color: $primary-color !default;
-$button-color-hover: darken($button-color, 5) !default;
-
-$link-color: $primary-color !default;
-$link-color-hover: darken($link-color, 10) !default;
 
 $card-border-radius: 6px !default;

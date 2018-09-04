@@ -1,0 +1,7 @@
+$button-color: $primary-color !default;
+$button-border-width: 1px !default;
+$button-border-color: $button-color !default;
+$button-color-hover: darken($button-color, 5) !default;
+$button-border-color-hover: darken($button-border-color, 5) !default;
+$button-border-radius: 5px !default;
+$button-padding: 5px 10px !default;

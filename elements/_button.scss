@@ -1,0 +1,24 @@
+@mixin button {
+	border: $button-border-width $button-border-color;
+	background-color: $button-color;
+	background: $button-color;
+	border-radius: $button-border-radius;
+	padding: $button-padding;
+	a {
+		color: $font-color-button;
+		font-family: $font-family-button;
+		font-size: $font-size-button;
+		font-weight: $font-weight-button;
+	}
+	&:hover {
+		border-color: $button-border-color-hover;
+		background-color: $button-color-hover;
+		background: $button-color-hover;
+		a {
+			color: $font-color-button-hover;
+		}
+	}
+	&:focus {
+		outline: none;
+	}
+}
