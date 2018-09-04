@@ -1,0 +1,10 @@
+@mixin link {
+	color: $font-color-link;
+	font-family: $font-family-link;
+	text-decoration: none;
+	font-weight: $font-weight-link;
+	font-style: $font-style-link;
+	&:hover {
+		color: $font-color-link-hover;
+	}
+}
