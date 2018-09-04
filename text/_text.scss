@@ -1,7 +1,7 @@
 @mixin heading {
 	font-family: $font-family-heading;
 	font-size: $font-size-heading;
-	font-weight: 500;
+	font-weight: $font-weight-heading;
 	font-style: normal;
 	color: $font-color-heading;
 }
@@ -9,7 +9,7 @@
 @mixin heading-2 {
 	font-family: $font-family-heading-2;
 	font-size: $font-size-heading-2;
-	font-weight: 500;
+	font-weight: $font-weight-heading-2;
 	font-style: normal;
 	color: $font-color-heading-2;
 }
@@ -17,7 +17,7 @@
 @mixin heading-3 {
 	font-family: $font-family-heading-3;
 	font-size: $font-size-heading-3;
-	font-weight: 700;
+	font-weight: $font-weight-heading-3;
 	font-style: bold;
 	color: $font-color-heading-3;
 }
@@ -25,7 +25,7 @@
 @mixin heading-4 {
 	font-family: $font-family-heading-4;
 	font-size: $font-size-heading-4;
-	font-weight: 500;
+	font-weight: $font-weight-heading-4;
 	font-style: normal;
 	color: $font-color-heading-4;
 }
@@ -33,7 +33,7 @@
 @mixin heading-5 {
 	font-family: $font-family-heading-5;
 	font-size: $font-size-heading-5;
-	font-weight: 700;
+	font-weight: $font-weight-heading-5;
 	font-style: bold;
 	color: $font-color-heading-5;
 }
@@ -41,7 +41,7 @@
 @mixin heading-6 {
 	font-family: $font-family-heading-6;
 	font-size: $font-size-heading-6;
-	font-weight: 500;
+	font-weight: $font-weight-heading-6;
 	font-style: normal;
 	color: $font-color-heading-6;
 }
@@ -49,7 +49,7 @@
 @mixin text {
 	font-family: $font-family;
 	font-size: $font-size;
-	font-weight: 500;
+	font-weight: $font-weight;
 	font-style: normal;
 	line-height: 1.5;
 	color: $font-color;
