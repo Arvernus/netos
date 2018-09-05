@@ -55,7 +55,7 @@ $font-margin-factor: 0.5 !default;
 	@return $size * $font-margin-factor;
 }
 $font-margin: font-margin($font-size) !default;
-$font-margin-heading: font-margin($font-margin-heading) !default;
+$font-margin-heading: font-margin($font-size-heading) !default;
 $font-margin-heading-2: font-margin($font-size-heading-2) !default;
 $font-margin-heading-3: font-margin($font-size-heading-3) !default;
 $font-margin-heading-4: font-margin($font-size-heading-4) !default;
