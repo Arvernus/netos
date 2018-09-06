@@ -1,72 +1,11 @@
-@mixin heading {
-	font-family: $font-family-heading;
-	font-size: $font-size-heading;
-	font-weight: $font-weight-heading;
-	font-style: $font-style-heading;
-	color: $font-color-heading;
-	margin-top: $font-margin-heading; 
-}
 
-@mixin heading-2 {
-	font-family: $font-family-heading-2;
-	font-size: $font-size-heading-2;
-	font-weight: $font-weight-heading-2;
-	font-style: normal;
-	color: $font-color-heading-2;
-	margin-top: $font-margin-heading-2; 
-}
-
-@mixin heading-3 {
-	font-family: $font-family-heading-3;
-	font-size: $font-size-heading-3;
-	font-weight: $font-weight-heading-3;
-	font-style: bold;
-	color: $font-color-heading-3;
-	margin-top: $font-margin-heading-3; 
-}
-
-@mixin heading-4 {
-	font-family: $font-family-heading-4;
-	font-size: $font-size-heading-4;
-	font-weight: $font-weight-heading-4;
-	font-style: normal;
-	color: $font-color-heading-4;
-	margin-top: 0; 
-}
-
-@mixin heading-5 {
-	font-family: $font-family-heading-5;
-	font-size: $font-size-heading-5;
-	font-weight: $font-weight-heading-5;
-	font-style: bold;
-	color: $font-color-heading-5;
-	margin-top: $font-margin-heading-5; 
-}
-
-@mixin heading-6 {
-	font-family: $font-family-heading-6;
-	font-size: $font-size-heading-6;
-	font-weight: $font-weight-heading-6;
-	font-style: normal;
-	color: $font-color-heading-6;
-	margin-top: $font-margin-heading-6; 
-}
-
-@mixin text {
-	font-family: $font-family;
-	font-size: $font-size;
-	font-weight: $font-weight;
-	font-style: normal;
-	line-height: 1.5;
-	color: $font-color;
-}
-
-
-@mixin text-settings($target) {
-	font-family: $font-family-$target;
-	font-size: $font-size-$target;
-	font-weight: $font-weight-$target;
-	font-style: $font-style-$target;
-	line-height: $line-height-$target;
-	color: $font-color-$target;
+@mixin text-settings($name) {
+	font-family: map-get($font-familys, $name);
+	font-size: map-get($font-sizes, $name);
+	font-weight: map-get($font-weights, $name);
+	font-style: map-get($font-styles, $name);
+	line-height: map-get($line-heights, $name);
+	color: map-get($font-colors, $name);
+	margin-top: map-get($font-margins, $name);
+	margin-bottom: map-get($font-margins, $name);
 }
