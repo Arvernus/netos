@@ -8,7 +8,7 @@
 		@include text-settings('menu-item');
 	}
 	&.current-menu-item:not(.menu-item-type-custom) a {
-		@include test-settings('menu-item-active');
+		@include text-settings('menu-item-active');
 	}
 	&:hover {
 		a {
