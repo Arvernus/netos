@@ -32,12 +32,12 @@ $font-familys: (
 // Font Color
 $font-color: #565154 !default;
 $font-color-text: $font-color !default;
-$font-color-heading: $font-color !default;
-$font-color-heading-2: $font-color !default;
-$font-color-heading-3: $font-color !default;
-$font-color-heading-4: $font-color !default;
-$font-color-heading-5: $font-color !default;
-$font-color-heading-6: $font-color !default;
+$font-color-heading: $font-color-heading !default;
+$font-color-heading-2: $font-color-heading !default;
+$font-color-heading-3: $font-color-heading !default;
+$font-color-heading-4: $font-color-heading !default;
+$font-color-heading-5: $font-color-heading !default;
+$font-color-heading-6: $font-color-heading !default;
 $font-color-button: $font-color !default;
 $font-color-button-hover: darken($font-color-button, 10) !default;
 $font-color-link: $font-color !default;
