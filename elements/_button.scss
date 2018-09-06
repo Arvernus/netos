@@ -2,7 +2,7 @@
 	border: $button-border-width $button-border-color;
 	background-color: $button-color;
 	background: $button-color;
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	@if $rounded-corners {
 		border-radius: $button-border-radius;
