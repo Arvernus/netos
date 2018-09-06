@@ -10,4 +10,4 @@ $site-header-logo-height: ($site-header-height * 0.5) !default;
 $site-header-logo-height-shrink: ($site-header-height-shrink * 0.5) !default;
 $site-header-logo-height-mobile: ($site-header-height-mobile * 0.5) !default;
 $site-header-color: $white !default;
-$site-header-nav-color: darken($header-color, 10) !default;
+$site-header-nav-color: darken($site-header-color, 10) !default;
