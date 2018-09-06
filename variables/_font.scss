@@ -144,3 +144,12 @@ $line-height-heading-3: $line-height-heading !default;
 $line-height-heading-4: $line-height-heading !default;
 $line-height-heading-5: $line-height-heading !default;
 $line-height-heading-6: $line-height-heading !default;
+$line-heights: (
+	text: $line-height-text,
+	heading: $line-height-heading,
+	heading-2: $line-height-heading-2,
+	heading-3: $line-height-heading-3,
+	heading-4: $line-height-heading-4,
+	heading-5: $line-height-heading-5,
+	heading-6: $line-height-heading-6,
+);
