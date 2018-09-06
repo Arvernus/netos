@@ -146,7 +146,7 @@ $font-margins: (
 // Font Margin Bottom
 $font-margin-bottom-factor: 0.5 !default; 
 $font-margin-bottom-text: $font-margin-text * $font-margin-bottom-factor !default;
-$font-margin-bottom-heading: $font-margin-heading-1 * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading: $font-margin-heading * $font-margin-bottom-factor !default;
 $font-margin-bottom-heading-2: $font-margin-heading-2 * $font-margin-bottom-factor !default;
 $font-margin-bottom-heading-3: $font-margin-heading-3 * $font-margin-bottom-factor !default;
 $font-margin-bottom-heading-4: $font-margin-heading-4 * $font-margin-bottom-factor !default;
