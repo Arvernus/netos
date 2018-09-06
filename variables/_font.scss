@@ -22,6 +22,7 @@ $font-color-link: $font-color !default;
 $font-color-link-hover: darken($font-color-link, 10) !default;
 $font-color-menu-item: $font-color !default;
 $font-color-menu-item-hover: $primary-color !default;
+$font-color-menu-item-active: darken($font-color, $darken-factor);
 
 $font-size: 18px !default;
 $font-size-heading: 2em !default;
@@ -32,6 +33,7 @@ $font-size-heading-5: 1.25em !default;
 $font-size-heading-6: 1.25em !default;
 $font-size-button: $font-size !default;
 $font-size-menu-item: $font-size !default;
+$font-size-menu-item-active: $font-size !default;
 
 $font-weight: 500;
 $font-weight-heading: $font-weight !default;
@@ -44,6 +46,7 @@ $font-weight-button: $font-weight !default;
 $font-weight-link: $font-weight !default;
 $font-weight-menu-item: $font-weight !default;
 $font-weight-menu-item-hover: $font-weight !default;
+$font-weight-menu-item-active: $font-weight !default;
 
 $font-style: normal !default;
 $font-style-heading: $font-style !default;
@@ -55,6 +58,7 @@ $font-style-heading-6: $font-style-heading !default;
 $font-style-button: $font-style !default;
 $font-style-link: $font-style !default;
 $font-style-menu-item: $font-style !default;
+$font-style-menu-item-active: $font-style !default;
 
 $font-margin-factor: 0.5 !default; 
 @function font-margin($size) {
