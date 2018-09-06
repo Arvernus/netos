@@ -10,7 +10,7 @@
 		font-style: $font-style-menu-item;
 		font-size: $font-size-menu-item;
 	}
-	&.current-menu-item a {
+	&.current-menu-item:not(.menu-item-type-custom) a {
 		color: darken($font-color, $darken-factor);
 		font-weight: $font-weight-menu-item-active;
 		font-style: $font-style-menu-item-active;
