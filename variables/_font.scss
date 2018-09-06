@@ -27,7 +27,9 @@ $font-familys: (
 	heading-4: $font-family-heading-4,
 	heading-5: $font-family-heading-5,
 	heading-6: $font-family-heading-6,
-);
+	button: $font-family-button,
+	link: $font-family-link,
+) !default;
 
 // Font Color
 $font-color: #565154 !default;
@@ -53,7 +55,13 @@ $font-colors: (
 	heading-4: $font-color-heading-4,
 	heading-5: $font-color-heading-5,
 	heading-6: $font-color-heading-6,
-);
+	button: $font-color-button,
+	link: $font-color-link,
+	link-hover: $font-color-link-hover,
+	menu-item: $font-color-menu-item,
+	menu-item-hover: $font-color-menu-item-hover,
+	menu-item-active: $font-color-menu-item-active,
+) !default;
 
 // Font Size
 $font-size: 18px !default;
@@ -66,6 +74,7 @@ $font-size-heading-5: 1.25em !default;
 $font-size-heading-6: 1.25em !default;
 $font-size-button: $font-size !default;
 $font-size-menu-item: $font-size !default;
+$font-size-menu-item-hover: $font-size !default;
 $font-size-menu-item-active: $font-size !default;
 $font-sizes: (
 	text: $font-size-text,
@@ -75,7 +84,11 @@ $font-sizes: (
 	heading-4: $font-size-heading-4,
 	heading-5: $font-size-heading-5,
 	heading-6: $font-size-heading-6,
-);
+	button: $font-size-button,
+	menu-item: $font-size-menu-item,
+	menu-item-hover: $font-size-menu-item-hover,
+	menu-item-active: $font-size-menu-item-active,
+) !default;
 
 // Font Weight
 $font-weight: 400;
@@ -99,7 +112,12 @@ $font-weights: (
 	heading-4: $font-weight-heading-4,
 	heading-5: $font-weight-heading-5,
 	heading-6: $font-weight-heading-6,
-);
+	button: $font-weight-button,
+	link: $font-weight-link,
+	menu-item: $font-weight-menu-item,
+	menu-item-hover: $font-weight-menu-item-hover,
+	menu-item-active: $font-weight-menu-item-active,
+) !default;
 
 // Font Style
 $font-style: normal !default;
@@ -113,6 +131,7 @@ $font-style-heading-6: $font-style-heading !default;
 $font-style-button: $font-style !default;
 $font-style-link: $font-style !default;
 $font-style-menu-item: $font-style !default;
+$font-style-menu-item-hover: $font-style !default;
 $font-style-menu-item-active: $font-style !default;
 $font-styles: (
 	text: $font-style-text,
@@ -122,7 +141,12 @@ $font-styles: (
 	heading-4: $font-style-heading-4,
 	heading-5: $font-style-heading-5,
 	heading-6: $font-style-heading-6,
-);
+	button: $font-style-button,
+	link: $font-style-link,
+	menu-item: $font-style-menu-item,
+	menu-item-hover: $font-style-menu-item-hover,
+	menu-item-active: $font-style-menu-item-active,
+) !default;
 
 // Font Margin
 $font-margin-factor: 0.5 !default; 

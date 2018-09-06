@@ -3,3 +3,10 @@ $small: 599px;
 $medium: 1023px;
 $large: 1439px;
 $xlarge: 1919px;
+$breakpoints: (
+	xsmall: $xsmall,
+	small: $small,
+	medium: $medium,
+	large: $large,
+	xlarge: $xlarge,
+) !default;

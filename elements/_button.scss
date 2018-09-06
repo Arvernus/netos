@@ -2,15 +2,23 @@
 	border: $button-border-width $button-border-color;
 	background-color: $button-color;
 	background: $button-color;
-	border-radius: $button-border-radius;
+	@if $rounded-corners {
+		border-radius: $button-border-radius;
+	}
+	@if $enable-transitions {
+		transition: $transition;
+	}
 	padding: $button-padding;
+	@include text-settings('button');
 	a {
 		@include text-settings('button');
 	}
 	&:hover {
+		cursor: pointer;
 		border-color: $button-border-color-hover;
 		background-color: $button-color-hover;
 		background: $button-color-hover;
+		@include text-settings('button-hover');
 		a {
 			@include text-settings('button-hover');
 		}
