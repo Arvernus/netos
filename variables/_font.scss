@@ -126,6 +126,7 @@ $font-styles: (
 
 // Font Margin
 $font-margin-factor: 0.5 !default; 
+$font-margin-bottom-factor: 0.5 !default; 
 $font-margin: font-margin($font-size) !default;
 $font-margin-text: $font-margin !default;
 $font-margin-heading: font-margin($font-size-heading) !default;
@@ -169,6 +170,6 @@ $font-settings: (
 	font-weight: $font-weights,
 	font-style: $font-styles,
 	margin-top: $font-margins,
-	margin-bottom: $font-margins,
+	margin-bottom: $font-margins * $font-margin-bottom-factor,
 	line-height: $line-heights,
 ) !default;
