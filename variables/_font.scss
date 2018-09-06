@@ -8,17 +8,6 @@ $font-elements: (
 	h6: heading-6,
 ) !default;
 
-$font-settings: ( 
-	font-family: $font-familys,
-	color: $font-colors,
-	font-size: $font-sizes,
-	font-weight: $font-weights,
-	font-style: $font-styles,
-	margin-top: $font-margins,
-	margin-bottom: $font-margins,
-	line-height: $line-heights,
-) !default;
-
 // Font Family
 $font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !default;
 $font-family-text: $font-family !default;
@@ -172,3 +161,14 @@ $line-heights: (
 	heading-5: $line-height-heading-5,
 	heading-6: $line-height-heading-6,
 );
+
+$font-settings: ( 
+	font-family: $font-familys,
+	color: $font-colors,
+	font-size: $font-sizes,
+	font-weight: $font-weights,
+	font-style: $font-styles,
+	margin-top: $font-margins,
+	margin-bottom: $font-margins,
+	line-height: $line-heights,
+) !default;
