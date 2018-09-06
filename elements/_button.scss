@@ -5,18 +5,14 @@
 	border-radius: $button-border-radius;
 	padding: $button-padding;
 	a {
-		color: $font-color-button;
-		font-family: $font-family-button;
-		font-size: $font-size-button;
-		font-weight: $font-weight-button;
-		font-style: $font-style-button;
+		@include text-settings('button');
 	}
 	&:hover {
 		border-color: $button-border-color-hover;
 		background-color: $button-color-hover;
 		background: $button-color-hover;
 		a {
-			color: $font-color-button-hover;
+			@include text-settings('button-hover');
 		}
 	}
 	&:focus {
