@@ -126,7 +126,6 @@ $font-styles: (
 
 // Font Margin
 $font-margin-factor: 0.5 !default; 
-$font-margin-bottom-factor: 0.5 !default; 
 $font-margin: font-margin($font-size) !default;
 $font-margin-text: $font-margin !default;
 $font-margin-heading: font-margin($font-size-heading) !default;
@@ -142,6 +141,24 @@ $font-margins: (
 	heading-4: $font-margin-heading-4,
 	heading-5: $font-margin-heading-5,
 	heading-6: $font-margin-heading-6,
+);
+
+// Font Margin Bottom
+$font-margin-bottom-factor: 0.5 !default; 
+$font-margin-bottom-text: $font-margin-text * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading: $font-margin-heading-1 * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-2: $font-margin-heading-2 * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-3: $font-margin-heading-3 * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-4: $font-margin-heading-4 * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-5: $font-margin-heading-5 * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-6: $font-margin-heading-6 * $font-margin-bottom-factor !default;
+$font-margins-bottom: (
+	heading: $font-margin-bottom-heading,
+	heading-2: $font-margin-bottom-heading-2,
+	heading-3: $font-margin-bottom-heading-3,
+	heading-4: $font-margin-bottom-heading-4,
+	heading-5: $font-margin-bottom-heading-5,
+	heading-6: $font-margin-bottom-heading-6,
 );
 
 // Line Height
@@ -170,6 +187,6 @@ $font-settings: (
 	font-weight: $font-weights,
 	font-style: $font-styles,
 	margin-top: $font-margins,
-	margin-bottom: $font-margins * $font-margin-bottom-factor,
+	margin-bottom: $font-margins-bottom,
 	line-height: $line-heights,
 ) !default;
