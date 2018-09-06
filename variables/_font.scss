@@ -19,6 +19,15 @@ $font-family-heading-5: $font-family-heading !default;
 $font-family-heading-6: $font-family-heading !default;
 $font-family-button: $font-family !default;
 $font-family-link: $font-family !default;
+$font-familys: (
+	text: $font-family-text,
+	heading: $font-family-heading,
+	heading-2: $font-family-heading-2,
+	heading-3: $font-family-heading-3,
+	heading-4: $font-family-heading-4,
+	heading-5: $font-family-heading-5,
+	heading-6: $font-family-heading-6,
+);
 
 // Font Color
 $font-color: #565154 !default;
@@ -36,6 +45,15 @@ $font-color-link-hover: darken($font-color-link, 10) !default;
 $font-color-menu-item: $font-color !default;
 $font-color-menu-item-hover: $primary-color !default;
 $font-color-menu-item-active: darken($font-color, $darken-factor);
+$font-colors: (
+	text: $font-color-text,
+	heading: $font-color-heading,
+	heading-2: $font-color-heading-2,
+	heading-3: $font-color-heading-3,
+	heading-4: $font-color-heading-4,
+	heading-5: $font-color-heading-5,
+	heading-6: $font-color-heading-6,
+);
 
 // Font Size
 $font-size: 18px !default;
@@ -49,6 +67,15 @@ $font-size-heading-6: 1.25em !default;
 $font-size-button: $font-size !default;
 $font-size-menu-item: $font-size !default;
 $font-size-menu-item-active: $font-size !default;
+$font-sizes: (
+	text: $font-size-text,
+	heading: $font-size-heading,
+	heading-2: $font-size-heading-2,
+	heading-3: $font-size-heading-3,
+	heading-4: $font-size-heading-4,
+	heading-5: $font-size-heading-5,
+	heading-6: $font-size-heading-6,
+);
 
 // Font Weight
 $font-weight: 500;
@@ -64,6 +91,15 @@ $font-weight-link: $font-weight !default;
 $font-weight-menu-item: $font-weight !default;
 $font-weight-menu-item-hover: $font-weight-menu-item !default;
 $font-weight-menu-item-active: $font-weight-menu-item !default;
+$font-weights: (
+	text: $font-weight-text,
+	heading: $font-weight-heading,
+	heading-2: $font-weight-heading-2,
+	heading-3: $font-weight-heading-3,
+	heading-4: $font-weight-heading-4,
+	heading-5: $font-weight-heading-5,
+	heading-6: $font-weight-heading-6,
+);
 
 // Font Style
 $font-style: normal !default;
@@ -78,6 +114,15 @@ $font-style-button: $font-style !default;
 $font-style-link: $font-style !default;
 $font-style-menu-item: $font-style !default;
 $font-style-menu-item-active: $font-style !default;
+$font-styles: (
+	text: $font-style-text,
+	heading: $font-style-heading,
+	heading-2: $font-style-heading-2,
+	heading-3: $font-style-heading-3,
+	heading-4: $font-style-heading-4,
+	heading-5: $font-style-heading-5,
+	heading-6: $font-style-heading-6,
+);
 
 // Font Margin
 $font-margin-factor: 0.5 !default; 

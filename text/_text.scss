@@ -63,10 +63,10 @@
 
 
 @mixin text-settings($target) {
-	font-family: $font-family+'-'+$target;
-	font-size: $font-size+'-'+$target;
-	font-weight: $font-weight+'-'+$target;
-	font-style: $font-style+'-'+$target;
-	line-height: $line-height+'-'+$target;
-	color: $font-color+'-'+$target;
+	font-family: $font-family-$target;
+	font-size: $font-size-$target;
+	font-weight: $font-weight-$target;
+	font-style: $font-style-$target;
+	line-height: $line-height-$target;
+	color: $font-color-$target;
 }
