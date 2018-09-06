@@ -11,6 +11,10 @@
 		margin: initial;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		grid-column-gap: 18px;
+		@media (min-width: $xsmall) {
+			grid-column-gap: 24px;
+		}
 	}
 }
 
