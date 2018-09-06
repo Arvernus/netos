@@ -166,7 +166,7 @@ $font-margins: (
 	heading-4: $font-margin-heading-4,
 	heading-5: $font-margin-heading-5,
 	heading-6: $font-margin-heading-6,
-);
+) !default;
 
 // Font Margin Bottom
 $font-margin-bottom-factor: 0.5 !default; 
@@ -184,7 +184,7 @@ $font-margins-bottom: (
 	heading-4: $font-margin-bottom-heading-4,
 	heading-5: $font-margin-bottom-heading-5,
 	heading-6: $font-margin-bottom-heading-6,
-);
+) !default;
 
 // Line Height
 $line-height: 1.5 !default;
