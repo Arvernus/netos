@@ -1,5 +1,5 @@
 $site-header-height: 80px !default;
-$site-header-height-mobile: ($header-height * 0.75) !default;
+$site-header-height-mobile: ($site-header-height * 0.75) !default;
 $site-header-shrink: false !default;
 $site-header-shrink-factor: 0.2 !default;
 $site-header-height-shrink: $site-header-height;
