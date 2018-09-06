@@ -1,5 +1,16 @@
+$font-settings: 
+	'text',
+	'heading',
+	'heading-2',
+	'heading-3',
+	'heading-4',
+	'heading-5',
+	'heading-6',
+;
 
+// Font Family
 $font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !default;
+$font-family-text: $font-family !default;
 $font-family-heading: $font-family !default;
 $font-family-heading-2: $font-family-heading !default;
 $font-family-heading-3: $font-family-heading !default;
@@ -9,7 +20,9 @@ $font-family-heading-6: $font-family-heading !default;
 $font-family-button: $font-family !default;
 $font-family-link: $font-family !default;
 
+// Font Color
 $font-color: #565154 !default;
+$font-color-text: $font-color !default;
 $font-color-heading: $font-color !default;
 $font-color-heading-2: $font-color !default;
 $font-color-heading-3: $font-color !default;
@@ -24,7 +37,9 @@ $font-color-menu-item: $font-color !default;
 $font-color-menu-item-hover: $primary-color !default;
 $font-color-menu-item-active: darken($font-color, $darken-factor);
 
+// Font Size
 $font-size: 18px !default;
+$font-size-text: $font-size !default;
 $font-size-heading: 2em !default;
 $font-size-heading-2: 1.75em !default;
 $font-size-heading-3: 1.5em !default;
@@ -35,7 +50,9 @@ $font-size-button: $font-size !default;
 $font-size-menu-item: $font-size !default;
 $font-size-menu-item-active: $font-size !default;
 
+// Font Weight
 $font-weight: 500;
+$font-weight-text: $font-weight !default;
 $font-weight-heading: $font-weight !default;
 $font-weight-heading-2: $font-weight-heading !default;
 $font-weight-heading-3: $font-weight-heading !default;
@@ -48,7 +65,9 @@ $font-weight-menu-item: $font-weight !default;
 $font-weight-menu-item-hover: $font-weight-menu-item !default;
 $font-weight-menu-item-active: $font-weight-menu-item !default;
 
+// Font Style
 $font-style: normal !default;
+$font-style-text: $font-style !default;
 $font-style-heading: $font-style !default;
 $font-style-heading-2: $font-style-heading !default;
 $font-style-heading-3: $font-style-heading !default;
@@ -60,11 +79,10 @@ $font-style-link: $font-style !default;
 $font-style-menu-item: $font-style !default;
 $font-style-menu-item-active: $font-style !default;
 
+// Font Margin
 $font-margin-factor: 0.5 !default; 
-@function font-margin($size) {
-	@return $size * $font-margin-factor;
-}
 $font-margin: font-margin($font-size) !default;
+$font-margin-text: $font-margin !default;
 $font-margin-heading: font-margin($font-size-heading) !default;
 $font-margin-heading-2: font-margin($font-size-heading-2) !default;
 $font-margin-heading-3: font-margin($font-size-heading-3) !default;
@@ -72,4 +90,12 @@ $font-margin-heading-4: font-margin($font-size-heading-4) !default;
 $font-margin-heading-5: font-margin($font-size-heading-5) !default;
 $font-margin-heading-6: font-margin($font-size-heading-6) !default;
 
-
+// Line Height
+$line-height: 1.5 !default;
+$line-height-text: $line-height !default;
+$line-height-heading: $line-height !default;
+$line-height-heading-2: $line-height-heading !default;
+$line-height-heading-3: $line-height-heading !default;
+$line-height-heading-4: $line-height-heading !default;
+$line-height-heading-5: $line-height-heading !default;
+$line-height-heading-6: $line-height-heading !default;
