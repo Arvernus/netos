@@ -20,6 +20,8 @@ $font-color-button: $font-color !default;
 $font-color-button-hover: darken($font-color-button, 10) !default;
 $font-color-link: $font-color !default;
 $font-color-link-hover: darken($font-color-link, 10) !default;
+$font-color-menu-item: $font-color !default;
+$font-color-menu-item-hover: $primary-color !default;
 
 $font-size: 18px !default;
 $font-size-heading: 2em !default;
