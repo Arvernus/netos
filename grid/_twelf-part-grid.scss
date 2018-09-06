@@ -114,7 +114,7 @@
 	@include grid-item(12,12,6,6,4,3);
 }
 @mixin grid-column-4 {
-	@include grid-item(12,12,6,6,4,4);
+	@include grid-item(12,12,6,4,4,4);
 }
 @mixin grid-column-5 {
 	@include grid-item(12,12,6,5,5,5);
