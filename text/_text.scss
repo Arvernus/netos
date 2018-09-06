@@ -1,11 +1,20 @@
 
+// @mixin text-settings($name) {
+// 	font-family: map-get($font-familys, $name);
+// 	font-size: map-get($font-sizes, $name);
+// 	font-weight: map-get($font-weights, $name);
+// 	font-style: map-get($font-styles, $name);
+// 	line-height: map-get($line-heights, $name);
+// 	color: map-get($font-colors, $name);
+// 	margin-top: map-get($font-margins, $name);
+// 	margin-bottom: map-get($font-margins, $name);
+// }
+
+
 @mixin text-settings($name) {
-	font-family: map-get($font-familys, $name);
-	font-size: map-get($font-sizes, $name);
-	font-weight: map-get($font-weights, $name);
-	font-style: map-get($font-styles, $name);
-	line-height: map-get($line-heights, $name);
-	color: map-get($font-colors, $name);
-	margin-top: map-get($font-margins, $name);
-	margin-bottom: map-get($font-margins, $name);
+	@each $setting, $setting-map in $font-settings {
+		@if map-has-key($setting-map, $name) {
+			$setting: map-get($setting-map, $name);
+		}
+	}
 }

@@ -1,4 +1,4 @@
-$font-settings: (
+$font-elements: (
 	':root': text,
 	h1: heading,
 	h2: heading-2,
@@ -6,6 +6,17 @@ $font-settings: (
 	h4: heading-4,
 	h5: heading-5,
 	h6: heading-6,
+) !default;
+
+$font-settings: ( 
+	font-family: $font-familys,
+	color: $font-colors,
+	font-size: $font-sizes,
+	font-weight: $font-weights,
+	font-style: $font-styles,
+	margin-top: $font-margins,
+	margin-bottom: $font-margins,
+	line-height: $line-heights,
 ) !default;
 
 // Font Family
