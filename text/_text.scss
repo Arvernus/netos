@@ -11,10 +11,14 @@
 // }
 
 
-@mixin text-settings($name) {
-	@each $setting, $setting-map in $font-settings {
-		@if map-has-key($setting-map, $name) {
-			@return $setting: map-get($setting-map, $name);
-		}
-	}
-}
+// @mixin text-settings($name) {
+// 	@each $setting, $setting-map in $font-settings {
+// 		@if map-has-key($setting-map, $name) {
+// 			$setting: map-get($setting-map, $name);
+// 		}
+// 	}
+// }
+
+// @mixin get-text-setting($setting, $setting-map, $name) {
+// 	$setting: map-get($setting-map, $name);
+// }
