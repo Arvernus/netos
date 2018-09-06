@@ -80,7 +80,7 @@ $font-sizes: (
 // Font Weight
 $font-weight: 400;
 $font-weight-text: $font-weight !default;
-$font-weight-heading: $font-weight !default;
+$font-weight-heading: $font-weight + 100 !default;
 $font-weight-heading-2: $font-weight-heading !default;
 $font-weight-heading-3: $font-weight-heading !default;
 $font-weight-heading-4: $font-weight-heading !default;
