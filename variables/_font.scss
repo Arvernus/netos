@@ -238,6 +238,41 @@ $text-decorations: (
 	menu-item-active: $text-decoration-menu-item-active,
 ) !default;
 
+// Text Decoration
+$text-align: left !default;
+$text-align-text: $text-align !default;
+$text-align-heading: $text-align !default;
+$text-align-heading-2: $text-align-heading !default;
+$text-align-heading-3: $text-align-heading !default;
+$text-align-heading-4: $text-align-heading !default;
+$text-align-heading-5: $text-align-heading !default;
+$text-align-heading-6: $text-align-heading !default;
+$text-align-button: center !default;
+$text-align-button-hover: $text-align-button !default;
+$text-align-link: $text-align !default;
+$text-align-link-hover: $text-align-link !default;
+$text-align-menu-item: center !default;
+$text-align-menu-item-hover: $text-align-menu-item !default;
+$text-align-menu-item-active: $text-align-menu-item !default;
+$text-aligns: (
+	text: $text-align-text,
+	heading: $text-align-heading,
+	heading-2: $text-align-heading-2,
+	heading-3: $text-align-heading-3,
+	heading-4: $text-align-heading-4,
+	heading-5: $text-align-heading-5,
+	heading-6: $text-align-heading-6,
+	button: $text-align-button,
+	button-hover: $text-align-button-hover,
+	link: $text-align-link,
+	link-hover: $text-align-link-hover,
+	menu-item: $text-align-menu-item,
+	menu-item-hover: $text-align-menu-item-hover,
+	menu-item-active: $text-align-menu-item-active,
+) !default;
+
+
+
 $font-settings: ( 
 	font-family: $font-familys,
 	color: $font-colors,
@@ -248,4 +283,5 @@ $font-settings: (
 	margin-bottom: $font-margins-bottom,
 	line-height: $line-heights,
 	text-decoration: $text-decorations,
+	text-align: $text-aligns,
 ) !default;
