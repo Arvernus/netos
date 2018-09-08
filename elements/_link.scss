@@ -3,5 +3,8 @@
 	&:hover {
 		cursor: pointer;
 		@include text-settings('link-hover');
+		* {
+			text-decoration: none;
+		}
 	}
 }

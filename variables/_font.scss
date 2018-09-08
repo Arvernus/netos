@@ -208,6 +208,7 @@ $line-heights: (
 // Text Decoration
 $text-decoration: none !default;
 $text-decoration-text: $text-decoration !default;
+$text-decoration-text-hover: $text-decoration-text !default;
 $text-decoration-heading: $text-decoration !default;
 $text-decoration-heading-2: $text-decoration-heading !default;
 $text-decoration-heading-3: $text-decoration-heading !default;
@@ -223,6 +224,7 @@ $text-decoration-menu-item-hover: $text-decoration-menu-item !default;
 $text-decoration-menu-item-active: $text-decoration-menu-item !default;
 $text-decorations: (
 	text: $text-decoration-text,
+	text-hover: $text-decoration-text-hover,
 	heading: $text-decoration-heading,
 	heading-2: $text-decoration-heading-2,
 	heading-3: $text-decoration-heading-3,
