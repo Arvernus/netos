@@ -1,0 +1,6 @@
+@mixin site-header() {
+	height: $site-header-height-mobile;
+	@media (min-width: $medium) {
+		height: $site-header-height;
+	}
+}
