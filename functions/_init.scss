@@ -1,11 +1,3 @@
 @function init() {
-	@each $element, $name in $font-elements {
-		#{$element} {
-			@include text-settings($name)
-		}
-	}
-
-	p {
-		font-family: $font-family;
-	}
+	
 }
