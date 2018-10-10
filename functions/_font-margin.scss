@@ -1,3 +1,4 @@
+/// Returns Font Margin in relation to Font Slíze
 @function font-margin($size) {
 	@return $size * $font-margin-factor;
 }
