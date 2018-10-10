@@ -20,6 +20,5 @@
   },
   "homepage": "https://github.com/Arvernus/netos#readme",
   "dependencies": {
-    "sassdoc": "^2.5.0"
   }
 }
