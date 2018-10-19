@@ -1,6 +1,6 @@
 @mixin hover_scale {
 	transition: transform 0.1s ease-in-out, filter 0.2s ease;
 	&:hover {
-		transform: scale(1.05);
+		transform: scale(1.02);
 	}
 }
