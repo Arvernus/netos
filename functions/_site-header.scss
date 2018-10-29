@@ -31,4 +31,9 @@
 		margin-right: 8.3%;
 		margin-right: calc(100% / 12);
 	}
+	&.shrink {
+		@media (min-width: $medium) {
+			height: $site-header-height-shrink;
+		}
+	}
 }
