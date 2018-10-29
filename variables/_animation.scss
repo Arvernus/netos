@@ -2,3 +2,5 @@ $enable-transitions: true !default;
 $transition-speed: 0.3s !default;
 $transition-curve: ease !default;
 $transition: $transition-speed $transition-curve !default;
+
+$hover-scale-factor: 1.02 !default;
