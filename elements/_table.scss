@@ -6,8 +6,9 @@
 		margin-bottom: 1rem;
 		overflow-x: auto; 
 		hyphens: auto;
+		background-color: rgba(0, 0, 0, .02);
 		tr:nth-of-type(odd) {
-			background-color: rgba(0, 0, 0, .05)
+			background-color: rgba(0, 0, 0, .05);
 		}
 		td, th {
 			padding: .75rem;
