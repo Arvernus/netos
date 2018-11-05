@@ -27,22 +27,23 @@
 }
 
 @mixin extended-width {
-	grid-column: 2 / 12;
-	@media (min-width: $xsmall) {
+	@if ($grid-content-width) {
 		grid-column: 2 / 12;
-	}
-	@media (min-width: $small) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $large) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: 2 / 12;
-	}
+		@media (min-width: $xsmall) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $small) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $medium) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $large) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $xlarge) {
+			grid-column: 2 / 12;
+		}
 	} @else {
 		width: 100%;
 		max-width: 90%;
