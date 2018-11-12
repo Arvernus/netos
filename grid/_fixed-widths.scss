@@ -1,0 +1,19 @@
+@mixin fixed-widths {
+	width: 100%;
+	max-width: 90%;
+	@media (min-width: $xsmall) {
+		max-width: 80%;
+	}
+	@media (min-width: $small) {
+		max-width: 70%;
+	}
+	@media (min-width: $medium) {
+		max-width: $medium * 0.8;
+	}
+	@media (min-width: $large) {
+		max-width: $large * 0.8;
+	}
+	@media (min-width: $xlarge) {
+		max-width: $xlarge * 0.8;
+	}
+}

@@ -19,44 +19,91 @@
 }
 
 @mixin full-width {
-	grid-column: 1 / 13;
+	margin: 0 auto;
+	@if $grid-content-width == true {
+		grid-column: 1 / 13;
+	} @else {
+		max-width: 100%;
+	}
 }
 
 @mixin extended-width {
-	grid-column: 2 / 12;
-	@media (min-width: $xsmall) {
+	margin: 0 auto;
+	@if $grid-content-width == true {
 		grid-column: 2 / 12;
-	}
-	@media (min-width: $small) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $large) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: 2 / 12;
+		@media (min-width: $xsmall) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $small) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $medium) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $large) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $xlarge) {
+			grid-column: 2 / 12;
+		}
+	} @else {
+		width: 100%;
+		max-width: 90%;
+		@media (min-width: $xsmall) {
+			max-width: 90%;
+		}
+		@media (min-width: $small) {
+			max-width: 80%;
+		}
+		@media (min-width: $medium) {
+			max-width: $medium * 0.9;
+		}
+		@media (min-width: $large) {
+			max-width: $large * 0.9;
+		}
+		@media (min-width: $xlarge) {
+			max-width: $xlarge * 0.9;
+		}
 	}
 }
 
 @mixin standard-width {
-	grid-column: 2 / 12;
-	@media (min-width: $xsmall) {
+	margin: 0 auto;
+	@if $grid-content-width == true {
 		grid-column: 2 / 12;
-	}
-	@media (min-width: $small) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: 3 / 11;
-	}
-	@media (min-width: $large) {
-		grid-column: 3 / 11;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: 3 / 11;
+		@media (min-width: $xsmall) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $small) {
+			grid-column: 2 / 12;
+		}
+		@media (min-width: $medium) {
+			grid-column: 3 / 11;
+		}
+		@media (min-width: $large) {
+			grid-column: 3 / 11;
+		}
+		@media (min-width: $xlarge) {
+			grid-column: 3 / 11;
+		}
+	} @else {
+		width: 100%;
+		max-width: 90%;
+		@media (min-width: $xsmall) {
+			max-width: 80%;
+		}
+		@media (min-width: $small) {
+			max-width: 70%;
+		}
+		@media (min-width: $medium) {
+			max-width: $medium * 0.8;
+		}
+		@media (min-width: $large) {
+			max-width: $large * 0.8;
+		}
+		@media (min-width: $xlarge) {
+			max-width: $xlarge * 0.8;
+		}
 	}
 }
 
