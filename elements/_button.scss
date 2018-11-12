@@ -6,6 +6,8 @@
 	text-decoration: none;
 	@if $rounded-corners {
 		border-radius: $button-border-radius;
+	} @else {
+		border-radius: 0;
 	}
 	@if $enable-transitions {
 		transition: $transition;
