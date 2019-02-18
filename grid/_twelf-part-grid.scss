@@ -1,189 +1,197 @@
 @mixin standard-grid {
-	display: flex;
-	flex-direction: column;
-	width: 90%;
-	@media (min-width: $medium) {
-		width: 60%;
-	}
-	margin: 0 auto;
-	@supports (display: grid) {
-		width: unset;
-		margin: initial;
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-column-gap: 18px;
-		@media (min-width: $xsmall) {
-			grid-column-gap: 24px;
-		}
-	}
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  @media (min-width: $medium) {
+    width: 60%;
+  }
+  margin: 0 auto;
+  @supports (display: grid) {
+    width: unset;
+    margin: initial;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 18px;
+    @media (min-width: $xsmall) {
+      grid-column-gap: 24px;
+    }
+  }
 }
 
 @mixin full-width {
-	margin: 0 auto;
-	@if $grid-content-width == true {
-		grid-column: 1 / 13;
-	} @else {
-		max-width: 100%;
-	}
+  margin: 0 auto;
+  @if $grid-content-width == true {
+    grid-column: 1 / 13;
+  } @else {
+    max-width: 100%;
+  }
 }
 
 @mixin extended-width {
-	margin: 0 auto;
-	@if $grid-content-width == true {
-		grid-column: 2 / 12;
-		@media (min-width: $xsmall) {
-			grid-column: 2 / 12;
-		}
-		@media (min-width: $small) {
-			grid-column: 2 / 12;
-		}
-		@media (min-width: $medium) {
-			grid-column: 2 / 12;
-		}
-		@media (min-width: $large) {
-			grid-column: 2 / 12;
-		}
-		@media (min-width: $xlarge) {
-			grid-column: 2 / 12;
-		}
-	} @else {
-		width: 100%;
-		max-width: 90%;
-		@media (min-width: $xsmall) {
-			max-width: 90%;
-		}
-		@media (min-width: $small) {
-			max-width: 80%;
-		}
-		@media (min-width: $medium) {
-			max-width: $medium * 0.9;
-		}
-		@media (min-width: $large) {
-			max-width: $large * 0.9;
-		}
-		@media (min-width: $xlarge) {
-			max-width: $xlarge * 0.9;
-		}
-	}
+  margin: 0 auto;
+  @if $grid-content-width == true {
+    grid-column: 2 / 12;
+    @media (min-width: $xsmall) {
+      grid-column: 2 / 12;
+    }
+    @media (min-width: $small) {
+      grid-column: 2 / 12;
+    }
+    @media (min-width: $medium) {
+      grid-column: 2 / 12;
+    }
+    @media (min-width: $large) {
+      grid-column: 2 / 12;
+    }
+    @media (min-width: $xlarge) {
+      grid-column: 2 / 12;
+    }
+  } @else {
+    width: 100%;
+    max-width: 90%;
+    @media (min-width: $xsmall) {
+      max-width: 90%;
+    }
+    @media (min-width: $small) {
+      max-width: 80%;
+    }
+    @media (min-width: $medium) {
+      max-width: $medium * 0.9;
+    }
+    @media (min-width: $large) {
+      max-width: $large * 0.9;
+    }
+    @media (min-width: $xlarge) {
+      max-width: $xlarge * 0.9;
+    }
+  }
 }
 
 @mixin standard-width {
-	margin: 0 auto;
-	@if $grid-content-width == true {
-		grid-column: 2 / 12;
-		@media (min-width: $xsmall) {
-			grid-column: 2 / 12;
-		}
-		@media (min-width: $small) {
-			grid-column: 2 / 12;
-		}
-		@media (min-width: $medium) {
-			grid-column: 3 / 11;
-		}
-		@media (min-width: $large) {
-			grid-column: 3 / 11;
-		}
-		@media (min-width: $xlarge) {
-			grid-column: 3 / 11;
-		}
-	} @else {
-		width: 100%;
-		max-width: 90%;
-		@media (min-width: $xsmall) {
-			max-width: 80%;
-		}
-		@media (min-width: $small) {
-			max-width: 70%;
-		}
-		@media (min-width: $medium) {
-			max-width: $medium * 0.8;
-		}
-		@media (min-width: $large) {
-			max-width: $large * 0.8;
-		}
-		@media (min-width: $xlarge) {
-			max-width: $xlarge * 0.8;
-		}
-	}
+  margin: 0 auto;
+  width: 100%;
+  @if $grid-content-width == true {
+    grid-column: 2 / 12;
+    @media (min-width: $xsmall) {
+      grid-column: 2 / 12;
+    }
+    @media (min-width: $small) {
+      grid-column: 2 / 12;
+    }
+    @media (min-width: $medium) {
+      grid-column: 3 / 11;
+    }
+    @media (min-width: $large) {
+      grid-column: 3 / 11;
+    }
+    @media (min-width: $xlarge) {
+      grid-column: 3 / 11;
+    }
+  } @else {
+    width: 100%;
+    max-width: 90%;
+    @media (min-width: $xsmall) {
+      max-width: 80%;
+    }
+    @media (min-width: $small) {
+      max-width: 70%;
+    }
+    @media (min-width: $medium) {
+      max-width: $medium * 0.8;
+    }
+    @media (min-width: $large) {
+      max-width: $large * 0.8;
+    }
+    @media (min-width: $xlarge) {
+      max-width: $xlarge * 0.8;
+    }
+  }
 }
 
 @mixin slim-width {
-	grid-column: 2 / 12;
-	@media (min-width: $xsmall) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $small) {
-		grid-column: 2 / 12;
-	}
-	@media (min-width: $medium) {
-		grid-column: 4 / 10;
-	}
-	@media (min-width: $large) {
-		grid-column: 5 / 9;
-	}
-	@media (min-width: $xlarge) {
-		grid-column: 5 / 9;
-	}
+  grid-column: 2 / 12;
+  @media (min-width: $xsmall) {
+    grid-column: 2 / 12;
+  }
+  @media (min-width: $small) {
+    grid-column: 2 / 12;
+  }
+  @media (min-width: $medium) {
+    grid-column: 4 / 10;
+  }
+  @media (min-width: $large) {
+    grid-column: 5 / 9;
+  }
+  @media (min-width: $xlarge) {
+    grid-column: 5 / 9;
+  }
 }
 
-@mixin grid-item($standardSpan, $xsmallSpan, $smallSpan, $mediumSpan, $largeSpan, $xlargeSpan) {
-	grid-column: span #{$standardSpan};
-	grid-row: span #{$standardSpan};
-	@media (min-width: $xsmall) {
-		grid-column: span #{$xsmallSpan};
-		grid-row: span #{$xsmallSpan};
-	}
-	@media (min-width: $small) {
-		grid-column: span #{$smallSpan};
-		grid-row: span #{$smallSpan};
-	}
-	@media (min-width: $medium) {
-		grid-column: span #{$mediumSpan};
-		grid-row: span #{$mediumSpan};
-	}
-	@media (min-width: $large) {
-		grid-column: span #{$largeSpan};
-		grid-row: span #{$largeSpan};
-	}
-	@media (min-width: $xlarge) {
-		grid-column: span #{$xlargeSpan};
-		grid-row: span #{$xlargeSpan};
-	}
+@mixin grid-item(
+  $standardSpan,
+  $xsmallSpan,
+  $smallSpan,
+  $mediumSpan,
+  $largeSpan,
+  $xlargeSpan
+) {
+  grid-column: span #{$standardSpan};
+  grid-row: span #{$standardSpan};
+  @media (min-width: $xsmall) {
+    grid-column: span #{$xsmallSpan};
+    grid-row: span #{$xsmallSpan};
+  }
+  @media (min-width: $small) {
+    grid-column: span #{$smallSpan};
+    grid-row: span #{$smallSpan};
+  }
+  @media (min-width: $medium) {
+    grid-column: span #{$mediumSpan};
+    grid-row: span #{$mediumSpan};
+  }
+  @media (min-width: $large) {
+    grid-column: span #{$largeSpan};
+    grid-row: span #{$largeSpan};
+  }
+  @media (min-width: $xlarge) {
+    grid-column: span #{$xlargeSpan};
+    grid-row: span #{$xlargeSpan};
+  }
 }
 
 @mixin grid-column-1 {
-	@include grid-item(12,6,4,3,2,1);
+  @include grid-item(12, 6, 4, 3, 2, 1);
 }
 @mixin grid-column-2 {
-	@include grid-item(12,12,6,6,4,2);
+  @include grid-item(12, 12, 6, 6, 4, 2);
 }
 @mixin grid-column-3 {
-	@include grid-item(12,12,6,6,4,3);
+  @include grid-item(12, 12, 6, 6, 4, 3);
 }
 @mixin grid-column-4 {
-	@include grid-item(12,12,6,4,4,4);
+  @include grid-item(12, 12, 6, 4, 4, 4);
 }
 @mixin grid-column-5 {
-	@include grid-item(12,12,6,5,5,5);
+  @include grid-item(12, 12, 6, 5, 5, 5);
 }
 @mixin grid-column-6 {
-	@include grid-item(12,12,6,6,6,6);
+  @include grid-item(12, 12, 6, 6, 6, 6);
 }
 @mixin grid-column-7 {
-	@include grid-item(12,12,12,6,6,7);
+  @include grid-item(12, 12, 12, 6, 6, 7);
 }
 @mixin grid-column-8 {
-	@include grid-item(12,12,12,6,8,8);
+  @include grid-item(12, 12, 12, 6, 8, 8);
 }
 @mixin grid-column-9 {
-	@include grid-item(12,12,12,9,9,9);
+  @include grid-item(12, 12, 12, 9, 9, 9);
 }
 @mixin grid-column-10 {
-	@include grid-item(12,12,12,12,10,10);
+  @include grid-item(12, 12, 12, 12, 10, 10);
 }
 @mixin grid-column-11 {
-	@include grid-item(12,12,12,12,12,11);
+  @include grid-item(12, 12, 12, 12, 12, 11);
 }
 @mixin grid-column-12 {
-	@include grid-item(12,12,12,12,12,12);
+  @include grid-item(12, 12, 12, 12, 12, 12);
 }
