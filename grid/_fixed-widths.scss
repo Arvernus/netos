@@ -11,10 +11,10 @@
     max-width: $medium * 0.8;
   }
   @media (min-width: $large) {
-    max-width: $large * 0.8;
+    max-width: $large * 0.7;
   }
   @media (min-width: $xlarge) {
-    max-width: $xlarge * 0.8;
+    max-width: $xlarge * 0.6;
   }
 }
 
@@ -31,9 +31,9 @@
     max-width: $medium * 0.9;
   }
   @media (min-width: $large) {
-    max-width: $large * 0.9;
+    max-width: $large * 0.8;
   }
   @media (min-width: $xlarge) {
-    max-width: $xlarge * 0.9;
+    max-width: $xlarge * 0.7;
   }
 }
