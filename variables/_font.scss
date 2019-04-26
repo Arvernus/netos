@@ -1,17 +1,18 @@
 $font-elements: (
-	':root': text,
-	h1: heading,
-	h2: heading-2,
-	h3: heading-3,
-	h4: heading-4,
-	h5: heading-5,
-	h6: heading-6,
-	a: link,
-	p: text,
+  ":root": text,
+  h1: heading,
+  h2: heading-2,
+  h3: heading-3,
+  h4: heading-4,
+  h5: heading-5,
+  h6: heading-6,
+  a: link,
+  p: text
 ) !default;
 
 // Font Family
-$font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif !default;
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+  Ubuntu, Cantarell, "Helvetica Neue", sans-serif !default;
 $font-family-text: $font-family !default;
 $font-family-heading: $font-family !default;
 $font-family-heading-2: $font-family-heading !default;
@@ -22,48 +23,15 @@ $font-family-heading-6: $font-family-heading !default;
 $font-family-button: $font-family !default;
 $font-family-link: $font-family !default;
 $font-familys: (
-	text: $font-family-text,
-	heading: $font-family-heading,
-	heading-2: $font-family-heading-2,
-	heading-3: $font-family-heading-3,
-	heading-4: $font-family-heading-4,
-	heading-5: $font-family-heading-5,
-	heading-6: $font-family-heading-6,
-	button: $font-family-button,
-	link: $font-family-link,
-) !default;
-
-// Font Color
-$font-color: #565154 !default;
-$font-color-text: $font-color !default;
-$font-color-heading: $font-color !default;
-$font-color-heading-2: $font-color-heading !default;
-$font-color-heading-3: $font-color-heading !default;
-$font-color-heading-4: $font-color-heading !default;
-$font-color-heading-5: $font-color-heading !default;
-$font-color-heading-6: $font-color-heading !default;
-$font-color-button: $font-color !default;
-$font-color-button-hover: darken($font-color-button, 10) !default;
-$font-color-link: $primary-color !default;
-$font-color-link-hover: darken($font-color-link, 10) !default;
-$font-color-menu-item: $font-color !default;
-$font-color-menu-item-hover: $primary-color !default;
-$font-color-menu-item-active: darken($font-color, $darken-factor);
-$font-colors: (
-	text: $font-color-text,
-	heading: $font-color-heading,
-	heading-2: $font-color-heading-2,
-	heading-3: $font-color-heading-3,
-	heading-4: $font-color-heading-4,
-	heading-5: $font-color-heading-5,
-	heading-6: $font-color-heading-6,
-	button: $font-color-button,
-	button-hover: $font-color-button-hover,
-	link: $font-color-link,
-	link-hover: $font-color-link-hover,
-	menu-item: $font-color-menu-item,
-	menu-item-hover: $font-color-menu-item-hover,
-	menu-item-active: $font-color-menu-item-active,
+  text: $font-family-text,
+  heading: $font-family-heading,
+  heading-2: $font-family-heading-2,
+  heading-3: $font-family-heading-3,
+  heading-4: $font-family-heading-4,
+  heading-5: $font-family-heading-5,
+  heading-6: $font-family-heading-6,
+  button: $font-family-button,
+  link: $font-family-link
 ) !default;
 
 // Font Size
@@ -80,21 +48,21 @@ $font-size-menu-item: $font-size !default;
 $font-size-menu-item-hover: $font-size !default;
 $font-size-menu-item-active: $font-size !default;
 $font-sizes: (
-	text: $font-size-text,
-	heading: $font-size-heading,
-	heading-2: $font-size-heading-2,
-	heading-3: $font-size-heading-3,
-	heading-4: $font-size-heading-4,
-	heading-5: $font-size-heading-5,
-	heading-6: $font-size-heading-6,
-	button: $font-size-button,
-	menu-item: $font-size-menu-item,
-	menu-item-hover: $font-size-menu-item-hover,
-	menu-item-active: $font-size-menu-item-active,
+  text: $font-size-text,
+  heading: $font-size-heading,
+  heading-2: $font-size-heading-2,
+  heading-3: $font-size-heading-3,
+  heading-4: $font-size-heading-4,
+  heading-5: $font-size-heading-5,
+  heading-6: $font-size-heading-6,
+  button: $font-size-button,
+  menu-item: $font-size-menu-item,
+  menu-item-hover: $font-size-menu-item-hover,
+  menu-item-active: $font-size-menu-item-active
 ) !default;
 
 // Font Weight
-$font-weight: 400;
+$font-weight: 400 !default;
 $font-weight-text: $font-weight !default;
 $font-weight-heading: $font-weight + 100 !default;
 $font-weight-heading-2: $font-weight-heading !default;
@@ -108,18 +76,47 @@ $font-weight-menu-item: $font-weight !default;
 $font-weight-menu-item-hover: $font-weight-menu-item !default;
 $font-weight-menu-item-active: $font-weight-menu-item !default;
 $font-weights: (
-	text: $font-weight-text,
-	heading: $font-weight-heading,
-	heading-2: $font-weight-heading-2,
-	heading-3: $font-weight-heading-3,
-	heading-4: $font-weight-heading-4,
-	heading-5: $font-weight-heading-5,
-	heading-6: $font-weight-heading-6,
-	button: $font-weight-button,
-	link: $font-weight-link,
-	menu-item: $font-weight-menu-item,
-	menu-item-hover: $font-weight-menu-item-hover,
-	menu-item-active: $font-weight-menu-item-active,
+  text: $font-weight-text,
+  heading: $font-weight-heading,
+  heading-2: $font-weight-heading-2,
+  heading-3: $font-weight-heading-3,
+  heading-4: $font-weight-heading-4,
+  heading-5: $font-weight-heading-5,
+  heading-6: $font-weight-heading-6,
+  button: $font-weight-button,
+  link: $font-weight-link,
+  menu-item: $font-weight-menu-item,
+  menu-item-hover: $font-weight-menu-item-hover,
+  menu-item-active: $font-weight-menu-item-active
+) !default;
+
+// Font Color
+$font-color: #565154 !default;
+$font-color-text: $font-color !default;
+$font-color-heading: $font-color !default;
+$font-color-heading-2: $font-color-heading !default;
+$font-color-heading-3: $font-color-heading !default;
+$font-color-heading-4: $font-color-heading !default;
+$font-color-heading-5: $font-color-heading !default;
+$font-color-heading-6: $font-color-heading !default;
+$font-color-button: $font-color !default;
+$font-color-link: $font-color !default;
+$font-color-menu-item: $font-color !default;
+$font-color-menu-item-hover: $font-color-menu-item !default;
+$font-color-menu-item-active: $font-color-menu-item !default;
+$font-color: (
+  text: $font-color-text,
+  heading: $font-color-heading,
+  heading-2: $font-color-heading-2,
+  heading-3: $font-color-heading-3,
+  heading-4: $font-color-heading-4,
+  heading-5: $font-color-heading-5,
+  heading-6: $font-color-heading-6,
+  button: $font-color-button,
+  link: $font-color-link,
+  menu-item: $font-color-menu-item,
+  menu-item-hover: $font-color-menu-item-hover,
+  menu-item-active: $font-color-menu-item-active
 ) !default;
 
 // Font Style
@@ -137,22 +134,22 @@ $font-style-menu-item: $font-style !default;
 $font-style-menu-item-hover: $font-style !default;
 $font-style-menu-item-active: $font-style !default;
 $font-styles: (
-	text: $font-style-text,
-	heading: $font-style-heading,
-	heading-2: $font-style-heading-2,
-	heading-3: $font-style-heading-3,
-	heading-4: $font-style-heading-4,
-	heading-5: $font-style-heading-5,
-	heading-6: $font-style-heading-6,
-	button: $font-style-button,
-	link: $font-style-link,
-	menu-item: $font-style-menu-item,
-	menu-item-hover: $font-style-menu-item-hover,
-	menu-item-active: $font-style-menu-item-active,
+  text: $font-style-text,
+  heading: $font-style-heading,
+  heading-2: $font-style-heading-2,
+  heading-3: $font-style-heading-3,
+  heading-4: $font-style-heading-4,
+  heading-5: $font-style-heading-5,
+  heading-6: $font-style-heading-6,
+  button: $font-style-button,
+  link: $font-style-link,
+  menu-item: $font-style-menu-item,
+  menu-item-hover: $font-style-menu-item-hover,
+  menu-item-active: $font-style-menu-item-active
 ) !default;
 
 // Font Margin
-$font-margin-factor: 0.5 !default; 
+$font-margin-factor: 0.5 !default;
 $font-margin: font-margin($font-size) !default;
 $font-margin-text: $font-margin !default;
 $font-margin-heading: font-margin($font-size-heading) !default;
@@ -162,30 +159,35 @@ $font-margin-heading-4: font-margin($font-size-heading-4) !default;
 $font-margin-heading-5: font-margin($font-size-heading-5) !default;
 $font-margin-heading-6: font-margin($font-size-heading-6) !default;
 $font-margins: (
-	heading: $font-margin-heading,
-	heading-2: $font-margin-heading-2,
-	heading-3: $font-margin-heading-3,
-	heading-4: $font-margin-heading-4,
-	heading-5: $font-margin-heading-5,
-	heading-6: $font-margin-heading-6,
+  heading: $font-margin-heading,
+  heading-2: $font-margin-heading-2,
+  heading-3: $font-margin-heading-3,
+  heading-4: $font-margin-heading-4,
+  heading-5: $font-margin-heading-5,
+  heading-6: $font-margin-heading-6
 ) !default;
 
 // Font Margin Bottom
-$font-margin-bottom-factor: 0.5 !default; 
+$font-margin-bottom-factor: 0.5 !default;
 $font-margin-bottom-text: $font-margin-text * $font-margin-bottom-factor !default;
 $font-margin-bottom-heading: $font-margin-heading * $font-margin-bottom-factor !default;
-$font-margin-bottom-heading-2: $font-margin-heading-2 * $font-margin-bottom-factor !default;
-$font-margin-bottom-heading-3: $font-margin-heading-3 * $font-margin-bottom-factor !default;
-$font-margin-bottom-heading-4: $font-margin-heading-4 * $font-margin-bottom-factor !default;
-$font-margin-bottom-heading-5: $font-margin-heading-5 * $font-margin-bottom-factor !default;
-$font-margin-bottom-heading-6: $font-margin-heading-6 * $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-2: $font-margin-heading-2 *
+  $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-3: $font-margin-heading-3 *
+  $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-4: $font-margin-heading-4 *
+  $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-5: $font-margin-heading-5 *
+  $font-margin-bottom-factor !default;
+$font-margin-bottom-heading-6: $font-margin-heading-6 *
+  $font-margin-bottom-factor !default;
 $font-margins-bottom: (
-	heading: $font-margin-bottom-heading,
-	heading-2: $font-margin-bottom-heading-2,
-	heading-3: $font-margin-bottom-heading-3,
-	heading-4: $font-margin-bottom-heading-4,
-	heading-5: $font-margin-bottom-heading-5,
-	heading-6: $font-margin-bottom-heading-6,
+  heading: $font-margin-bottom-heading,
+  heading-2: $font-margin-bottom-heading-2,
+  heading-3: $font-margin-bottom-heading-3,
+  heading-4: $font-margin-bottom-heading-4,
+  heading-5: $font-margin-bottom-heading-5,
+  heading-6: $font-margin-bottom-heading-6
 ) !default;
 
 // Line Height
@@ -198,13 +200,13 @@ $line-height-heading-4: $line-height-heading !default;
 $line-height-heading-5: $line-height-heading !default;
 $line-height-heading-6: $line-height-heading !default;
 $line-heights: (
-	text: $line-height-text,
-	heading: $line-height-heading,
-	heading-2: $line-height-heading-2,
-	heading-3: $line-height-heading-3,
-	heading-4: $line-height-heading-4,
-	heading-5: $line-height-heading-5,
-	heading-6: $line-height-heading-6,
+  text: $line-height-text,
+  heading: $line-height-heading,
+  heading-2: $line-height-heading-2,
+  heading-3: $line-height-heading-3,
+  heading-4: $line-height-heading-4,
+  heading-5: $line-height-heading-5,
+  heading-6: $line-height-heading-6
 ) !default;
 
 // Text Decoration
@@ -225,21 +227,21 @@ $text-decoration-menu-item: $text-decoration !default;
 $text-decoration-menu-item-hover: $text-decoration-menu-item !default;
 $text-decoration-menu-item-active: $text-decoration-menu-item !default;
 $text-decorations: (
-	text: $text-decoration-text,
-	text-hover: $text-decoration-text-hover,
-	heading: $text-decoration-heading,
-	heading-2: $text-decoration-heading-2,
-	heading-3: $text-decoration-heading-3,
-	heading-4: $text-decoration-heading-4,
-	heading-5: $text-decoration-heading-5,
-	heading-6: $text-decoration-heading-6,
-	button: $text-decoration-button,
-	button-hover: $text-decoration-button-hover,
-	link: $text-decoration-link,
-	link-hover: $text-decoration-link-hover,
-	menu-item: $text-decoration-menu-item,
-	menu-item-hover: $text-decoration-menu-item-hover,
-	menu-item-active: $text-decoration-menu-item-active,
+  text: $text-decoration-text,
+  text-hover: $text-decoration-text-hover,
+  heading: $text-decoration-heading,
+  heading-2: $text-decoration-heading-2,
+  heading-3: $text-decoration-heading-3,
+  heading-4: $text-decoration-heading-4,
+  heading-5: $text-decoration-heading-5,
+  heading-6: $text-decoration-heading-6,
+  button: $text-decoration-button,
+  button-hover: $text-decoration-button-hover,
+  link: $text-decoration-link,
+  link-hover: $text-decoration-link-hover,
+  menu-item: $text-decoration-menu-item,
+  menu-item-hover: $text-decoration-menu-item-hover,
+  menu-item-active: $text-decoration-menu-item-active
 ) !default;
 
 // Text Decoration
@@ -259,33 +261,31 @@ $text-align-menu-item: center !default;
 $text-align-menu-item-hover: $text-align-menu-item !default;
 $text-align-menu-item-active: $text-align-menu-item !default;
 $text-aligns: (
-	text: $text-align-text,
-	heading: $text-align-heading,
-	heading-2: $text-align-heading-2,
-	heading-3: $text-align-heading-3,
-	heading-4: $text-align-heading-4,
-	heading-5: $text-align-heading-5,
-	heading-6: $text-align-heading-6,
-	button: $text-align-button,
-	button-hover: $text-align-button-hover,
-	link: $text-align-link,
-	link-hover: $text-align-link-hover,
-	menu-item: $text-align-menu-item,
-	menu-item-hover: $text-align-menu-item-hover,
-	menu-item-active: $text-align-menu-item-active,
+  text: $text-align-text,
+  heading: $text-align-heading,
+  heading-2: $text-align-heading-2,
+  heading-3: $text-align-heading-3,
+  heading-4: $text-align-heading-4,
+  heading-5: $text-align-heading-5,
+  heading-6: $text-align-heading-6,
+  button: $text-align-button,
+  button-hover: $text-align-button-hover,
+  link: $text-align-link,
+  link-hover: $text-align-link-hover,
+  menu-item: $text-align-menu-item,
+  menu-item-hover: $text-align-menu-item-hover,
+  menu-item-active: $text-align-menu-item-active
 ) !default;
 
-
-
-$font-settings: ( 
-	font-family: $font-familys,
-	color: $font-colors,
-	font-size: $font-sizes,
-	font-weight: $font-weights,
-	font-style: $font-styles,
-	margin-top: $font-margins,
-	margin-bottom: $font-margins-bottom,
-	line-height: $line-heights,
-	text-decoration: $text-decorations,
-	text-align: $text-aligns,
+$font-settings: (
+  font-family: $font-familys,
+  color: $font-colors,
+  font-size: $font-sizes,
+  font-weight: $font-weights,
+  font-style: $font-styles,
+  margin-top: $font-margins,
+  margin-bottom: $font-margins-bottom,
+  line-height: $line-heights,
+  text-decoration: $text-decorations,
+  text-align: $text-aligns
 ) !default;
