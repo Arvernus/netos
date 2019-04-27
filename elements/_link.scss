@@ -1,10 +1,10 @@
 @mixin link {
-	@include text-settings('link');
-	&:hover {
-		cursor: pointer;
-		@include text-settings('link-hover');
-		* {
-			text-decoration: none;
-		}
-	}
+  @include text-settings("link");
+  &:hover {
+    cursor: pointer;
+    @include text-settings("link-hover");
+    * {
+      text-decoration: none;
+    }
+  }
 }

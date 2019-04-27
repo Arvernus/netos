@@ -1,7 +1,7 @@
 @mixin text-settings($name) {
-	@each $setting, $setting-map in $font-settings {
-		@if map-has-key($setting-map, $name) {
-			#{$setting}: map-get($setting-map, $name);
-		}
-	}
+  @each $setting, $setting-map in $font-settings {
+    @if map-has-key($setting-map, $name) {
+      #{$setting}: map-get($setting-map, $name);
+    }
+  }
 }

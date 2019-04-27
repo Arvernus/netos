@@ -1,18 +1,18 @@
 @mixin menu-item {
-	list-style: none;
-	a {
-		display: block;
-		text-decoration: none;
-		@include text-settings('text');
-		padding: $menu-item-padding;
-		@include text-settings('menu-item');
-	}
-	&.current-menu-item:not(.menu-item-type-custom) a {
-		@include text-settings('menu-item-active');
-	}
-	&:hover {
-		a {
-			@include text-settings('menu-item-hover');
-		}
-	}
+  list-style: none;
+  a {
+    display: block;
+    text-decoration: none;
+    @include text-settings("text");
+    padding: $menu-item-padding;
+    @include text-settings("menu-item");
+  }
+  &.current-menu-item:not(.menu-item-type-custom) a {
+    @include text-settings("menu-item-active");
+  }
+  &:hover {
+    a {
+      @include text-settings("menu-item-hover");
+    }
+  }
 }

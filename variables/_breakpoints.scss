@@ -4,11 +4,11 @@ $medium: 1023px;
 $large: 1439px;
 $xlarge: 1919px;
 $breakpoints: (
-	xsmall: $xsmall,
-	small: $small,
-	medium: $medium,
-	large: $large,
-	xlarge: $xlarge,
+  xsmall: $xsmall,
+  small: $small,
+  medium: $medium,
+  large: $large,
+  xlarge: $xlarge
 ) !default;
 
 $grid-content-width: true !default;
@@ -18,22 +18,21 @@ $tablet_width: 768px;
 $desktop_width: 1168px;
 $wide_width: 1379px;
 
+@mixin media($res) {
+  @if tablet == $res {
+    @media only screen and (min-width: $tablet_width) {
+      @content;
+    }
+  }
+  @if desktop == $res {
+    @media only screen and (min-width: $desktop_width) {
+      @content;
+    }
+  }
 
-@mixin media( $res ) {
-	@if tablet == $res {
-		@media only screen and (min-width: $tablet_width) {
-			@content;
-		}
-	}
-	@if desktop == $res {
-		@media only screen and (min-width: $desktop_width) {
-			@content;
-		}
-	}
-
-	@if wide == $res {
-		@media only screen and (min-width: $wide_width) {
-			@content;
-		}
-	}
+  @if wide == $res {
+    @media only screen and (min-width: $wide_width) {
+      @content;
+    }
+  }
 }

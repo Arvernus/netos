@@ -1,11 +1,11 @@
 @mixin init() {
-	@each $element, $name in $font-elements {
-		#{$element} {
-			@include text-settings($name)
-		}
-	}
+  @each $element, $name in $font-elements {
+    #{$element} {
+      @include text-settings($name);
+    }
+  }
 
-	p {
-		font-family: $font-family;
-	}
+  p {
+    font-family: $font-family;
+  }
 }

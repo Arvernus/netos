@@ -1,19 +1,20 @@
 @mixin table {
-	border-collapse: collapse;
-	tbody {
-		width: 100%;
-		max-width: 100%;
-		margin-bottom: 1rem;
-		overflow-x: auto; 
-		hyphens: auto;
-		background-color: rgba(0, 0, 0, .02);
-		tr:nth-of-type(odd) {
-			background-color: rgba(0, 0, 0, .05);
-		}
-		td, th {
-			padding: .75rem;
-			vertical-align: top;
-			border-top: 1px solid #e9ecef;
-		}
-	}
+  border-collapse: collapse;
+  tbody {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    hyphens: auto;
+    background-color: rgba(0, 0, 0, 0.02);
+    tr:nth-of-type(odd) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    td,
+    th {
+      padding: 0.75rem;
+      vertical-align: top;
+      border-top: 1px solid #e9ecef;
+    }
+  }
 }

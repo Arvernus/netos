@@ -1,39 +1,39 @@
 @mixin site-header() {
-	height: $site-header-height-mobile;
-	@media (min-width: $medium) {
-		height: $site-header-height;
-	}
-	background-color: $site-header-color;
-	z-index: 100;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-	position: relative;
-	@if $site-header-sticky {
-		@media (min-width: $medium) {
-			position: sticky;
-			top: 0;
-		}
-	}
-	.admin-bar & {
-		@media (min-width: $medium) {
-			position: sticky;
-			top: 32px;
-		}
-	}
-	> *:first-child {
-		margin-left: 8.3%;
-		margin-left: calc(100% / 12);
-	}
-	> *:last-child {
-		margin-right: 8.3%;
-		margin-right: calc(100% / 12);
-	}
-	&.shrink {
-		@media (min-width: $medium) {
-			height: $site-header-height-shrink;
-		}
-	}
+  height: $site-header-height-mobile;
+  @media (min-width: $medium) {
+    height: $site-header-height;
+  }
+  background-color: $site-header-color;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+  @if $site-header-sticky {
+    @media (min-width: $medium) {
+      position: sticky;
+      top: 0;
+    }
+  }
+  .admin-bar & {
+    @media (min-width: $medium) {
+      position: sticky;
+      top: 32px;
+    }
+  }
+  > *:first-child {
+    margin-left: 8.3%;
+    margin-left: calc(100% / 12);
+  }
+  > *:last-child {
+    margin-right: 8.3%;
+    margin-right: calc(100% / 12);
+  }
+  &.shrink {
+    @media (min-width: $medium) {
+      height: $site-header-height-shrink;
+    }
+  }
 }

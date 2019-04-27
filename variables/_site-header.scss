@@ -4,7 +4,8 @@ $site-header-shrink: false !default;
 $site-header-shrink-factor: 0.2 !default;
 $site-header-height-shrink: $site-header-height;
 @if $site-header-shrink {
-	$site-header-height-shrink: $site-header-height - ($site-header-height * $site-header-shrink-factor);
+  $site-header-height-shrink: $site-header-height -
+    ($site-header-height * $site-header-shrink-factor);
 }
 $site-header-logo-height: ($site-header-height * 0.5) !default;
 $site-header-logo-height-shrink: ($site-header-height-shrink * 0.5) !default;

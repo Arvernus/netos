@@ -1,7 +1,5 @@
 @mixin button {
-	border: $button-border-width $button-border-color;
-	background-color: $button-color;
-	background: $button-color;
+	border: $button-border-width;
 	display: inline-block;
 	text-decoration: none;
 	@if $rounded-corners {
@@ -20,8 +18,6 @@
 	&:hover {
 		cursor: pointer;
 		border-color: $button-border-color-hover;
-		background-color: $button-color-hover;
-		background: $button-color-hover;
 		@include text-settings('button-hover');
 		a {
 			@include text-settings('button-hover');
