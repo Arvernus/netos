@@ -1,0 +1,17 @@
+@mixin horizontal {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+@mixin vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin horizontal-responsive {
+  @include vertical;
+  @media (min-width: $medium) {
+    @include horizontal;
+  }
+}
