@@ -1,5 +1,19 @@
 @mixin fixed-widths {
   width: 100%;
+  @include fixed-max-widths;
+}
+
+@mixin fixed-widths-wide {
+  width: 100%;
+  @include fixed-max-widths-wide;
+}
+
+@mixin fixed-widths-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+@mixin fixed-max-widths {
   max-width: 90%;
   @media (min-width: $xsmall) {
     max-width: 80%;
@@ -18,8 +32,7 @@
   }
 }
 
-@mixin fixed-widths-wide {
-  width: 100%;
+@mixin fixed-max-widths-wide {
   max-width: 95%;
   @media (min-width: $xsmall) {
     max-width: 90%;
@@ -36,9 +49,4 @@
   @media (min-width: $xlarge) {
     max-width: $xlarge * 0.65;
   }
-}
-
-@mixin fixed-widths-full {
-  width: 100%;
-  max-width: 100%;
 }
